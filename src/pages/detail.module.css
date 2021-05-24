@@ -17,7 +17,7 @@
 }
 
 .detail_section::after {
-  content: "123";
+  content: "";
   position: absolute;
   width: 1;
   height: 100vh;
