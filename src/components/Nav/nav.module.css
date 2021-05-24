@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  margin: 0;
+  padding: 1.2em;
+}
+
+.logo {
+  color: red;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.listContainer {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 5em;
+}
+
+.listContainer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1em;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+
+.listContainer a:hover {
+  color: red;
+}
+
+.iconContainer {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.iconContainer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1em;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+
+.iconContainer a:hover {
+  color: red;
+}

@@ -1,0 +1,131 @@
+.movieMain {
+  /* display: flex; */
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+  height: 90vh;
+}
+
+.movieMain::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.938) 0 15%,
+    rgba(0, 0, 0, 0.712) 30% 100%
+  );
+  z-index: 10;
+}
+
+.movieMainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.842);
+  /* mix-blend-mode: soft-light; */
+}
+
+.movieMainText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 5em;
+  bottom: 10em;
+  color: white;
+  z-index: 10;
+}
+
+.movieMainText h1 {
+  text-align: start;
+  margin-right: 0.5em;
+  font-size: 64px;
+  margin: 0;
+}
+
+.movieMainText p {
+  width: 650px;
+  height: 100px;
+  padding: 10px;
+  font-size: 12.8px;
+  overflow-y: scroll;
+  color: #fff;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.movieMainBtn {
+  margin-left: 0.5rem;
+}
+
+.mainBtnPlay {
+  font-size: 12.8px;
+  margin-right: 0.7em;
+  width: 160px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mainBtnReview {
+  font-size: 12.8px;
+  width: 160px;
+  height: 30px;
+  color: #fff;
+  background-color: rgb(230, 17, 17);
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mainBtnPlay:hover {
+  background-color: rgb(230, 17, 17);
+  color: white;
+}
+
+.mainBtnPlay:hover::before {
+  transition: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  top: 0;
+  right: 0.5em;
+  background-color: rgb(255, 255, 255);
+}
+
+.mainBtnReview:hover {
+  background-color: white;
+  color: black;
+}
+
+.mainBtnReview:hover::before {
+  transition: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  top: 0;
+  right: 0.5em;
+  background-color: rgb(230, 17, 17);
+}
+
+.mainCoverTitle {
+  display: block;
+  color: #fff;
+  padding: 1em 0.5em;
+  margin: 0;
+  background-color: #111;
+}
